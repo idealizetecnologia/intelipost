@@ -1,5 +1,5 @@
 {
-    "name": "intelipost/api-php",
+    "name": "idealizetecnologia/intelipost",
     "description": "Intelipost Logistics Gateway Magento Extension",
     "minimum-stability": "dev",
     "keywords": [ "shipping", "api", "intelipost", "logistics", "gateway" ],
