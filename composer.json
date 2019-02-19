@@ -1,6 +1,6 @@
 {
     "name": "idealizetecnologia/intelipost",
-    "description": "Intelipost Logistics Gateway Magento Extension",
+    "description": "Intelipost Logistics Gateway PHP SDK",
     "keywords": [ "shipping", "api", "intelipost", "logistics", "gateway" ],
     "homepage": "https://github.com/intelipost/api-php",
     "type": "library",
