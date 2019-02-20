@@ -38,6 +38,10 @@ final class product {
     /**
      * @var string
      */    
+    public $product_category;
+    /**
+     * @var string
+     */    
     public $description;
     /**
      * @var boolean
