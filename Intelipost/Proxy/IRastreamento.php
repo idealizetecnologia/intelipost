@@ -8,5 +8,11 @@ namespace Intelipost\Proxy;
 interface IRastreamento {
     
     public function CriarRastreamento();
+
+    /**
+     * @param \Intelipost\Proxy\Arguments\GerarTrackingCodeArgs $args
+     * @return \Intelipost\Response\GerarTrackingCodeResponse[]
+     */
+    public function GerarTrackingCode(Arguments\GerarTrackingCodeArgs $args);
     
 }

@@ -122,8 +122,30 @@ final class PedidoProxy extends ProxyBase implements IPedidoDeEnvio {
         
         $res = $this->_curl->GetResult();
         return new Response\IntelipostPedidoMarcadoComoProntoResponse($res);
-    }    
-    
+    }
+
+    /**
+     * @param \Intelipost\Proxy\Arguments\DispararPreListaPostagemDiversosVolumesArgs $args
+     * @return \Intelipost\Response\DispararPreListaPostagemDiversosVolumesResponse
+     */
+    public function DispararPreListaPostagemDiversosVolumes(Arguments\DispararPreListaPostagemDiversosVolumesArgs $args) {
+
+        $this->_curl->SetIncludeHeader(false);
+        $this->_curl->SetCustomRequest("POST");
+
+        $payload = array();
+        $payload['logistic_provider_id']        = $args->getLogisticProviderId();
+        $payload['shipment_order_volume_ids']   = $args->GetOrders();
+
+        $payload = json_encode($payload);
+
+        $this->_curl->SetPost($payload);
+        $this->_curl->CreateCurl($this->_baseURL . "/pre_shipment_list/send_volumes");
+
+        $res = $this->_curl->GetResult();
+        return new Response\DispararPreListaPostagemDiversosVolumesResponse($res);
+    }
+
     public function AtualizarDadosDeRastreamento() {
         throw new \Exception('Not implemented yet');
     }

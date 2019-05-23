@@ -49,7 +49,13 @@ interface IPedidoDeEnvio {
      * @return \Intelipost\Proxy\Response\IntelipostPedidoMarcadoComoProntoResponse[]
      */
     public function MarcarDiversosPedidosParaProntoParaEnvio(Arguments\MarcarPedidosComoProntoParaEnvioArgs $args);
-        
+
+    /**
+     * @param \Intelipost\Proxy\Arguments\DispararPreListaPostagemDiversosVolumesArgs $args
+     * @return \Intelipost\Proxy\Response\DispararPreListaPostagemDiversosVolumesResponse[]
+     */
+    public function DispararPreListaPostagemDiversosVolumes(Arguments\DispararPreListaPostagemDiversosVolumesArgs $args);
+
     public function ImpressaoDasEtiquetas();
     
     public function ConsultarDadosDoDestinatario();
