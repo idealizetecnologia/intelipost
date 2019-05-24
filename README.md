@@ -47,7 +47,7 @@ Up-to-date documentation at: http://docs.intelipost.com.br
 Releases
 --------------------
 ## 1.1.0
-*2019-05-24 | Intelipost*
+*2019-05-24 | Idealize Tecnologia*
 
 - Generate Tracking Code
 - Generate PLP
