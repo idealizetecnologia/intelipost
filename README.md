@@ -46,6 +46,12 @@ Up-to-date documentation at: http://docs.intelipost.com.br
 
 Releases
 --------------------
+## 1.1.0
+*2019-05-24 | Intelipost*
+
+- Generate Tracking Code
+- Generate PLP
+
 ## 1.0.1
 *2016-02-10 | Intelipost*
 
